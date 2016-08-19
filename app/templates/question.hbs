@@ -2,13 +2,13 @@
   <h1>Question: "{{model.query}}"</h1>
   {{question-details question=model update="update" delete="delete"}}
 </div>
-<div class="new-answer">
-  {{new-answer question=model saveAnswer='saveAnswer'}}
-</div>
 <div class="answers">
   <h3>Answers:</h3>
   <hr>
   {{#each model.answers as |answer|}}
     {{answer-tile answer=answer deleteAnswer="deleteAnswer" updateAnswer="updateAnswer"}}
   {{/each}}
+  <div class="new-answer">
+    {{new-answer question=model saveAnswer='saveAnswer'}}
+  </div>
 </div>

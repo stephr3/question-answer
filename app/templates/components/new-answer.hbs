@@ -1,5 +1,4 @@
 {{#if showAddAnswer}}
-  <hr>
   <form>
     <div class="form-group">
       <label for="author">Your Name:</label>
@@ -15,7 +14,10 @@
     </div>
     <button class="btn" {{action 'saveAnswer'}}>Save</button>
   </form>
-  <hr>
+  <br>
+  <br>
 {{else}}
   <button class="btn" {{action 'showAddAnswer'}}>Add a New Answer!</button>
+  <br>
+  <br>
 {{/if}}
