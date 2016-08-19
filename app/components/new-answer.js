@@ -11,7 +11,6 @@ export default Ember.Component.extend({
         author: this.get('author'),
         date: this.get('date'),
         content: this.get('content'),
-        score: 0,
         question: this.get('question')
       };
       this.set('showAddAnswer', false);
