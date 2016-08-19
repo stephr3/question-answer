@@ -1,0 +1,71 @@
+body {
+  font-size: 1.6em;
+}
+.hero-unit {
+  background-image:url('http://www.spriters-resource.com/resources/game_icons/1/370.png');
+  background-size:length;
+  background-color: #EEEEEE;
+  height:25vh;
+}
+
+.main-title {
+  color: white;
+  font-size: 3.5em;
+  margin-top: 0;
+  padding-top: 1.5em;
+  opacity: .9;
+  text-align: center;
+}
+
+.btn {
+  background-color: white;
+  border-color: black;
+}
+
+.btn:hover {
+  border-color: #ff463b;
+  border-width: 1.8px;
+}
+
+a {
+  color: #040404;
+}
+
+a:hover {
+  color: #ff463b;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightgray;
+  text-decoration: none;
+}
+
+a:visited:hover {
+  color: #ff463b;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.container {
+  max-width: 80%;
+}
+
+.main-list {
+  font-size: 1.2em;
+  line-height: 2;
+  color: #ff6e66;
+}
+
+.main-list:visited {
+  color: #ff6e66;
+}
+
+.glyphicon:hover {
+  color: #ff463b;
+}

@@ -7,6 +7,7 @@
 </div>
 <div class="answers">
   <h3>Answers:</h3>
+  <hr>
   {{#each model.answers as |answer|}}
     {{answer-tile answer=answer deleteAnswer="deleteAnswer" updateAnswer="updateAnswer"}}
   {{/each}}

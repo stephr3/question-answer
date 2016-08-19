@@ -4,6 +4,7 @@
   <span class="glyphicon glyphicon-pencil" {{action 'showEditAnswer'}}></span>&nbsp;
   <span class="glyphicon glyphicon-trash" {{action 'deleteAnswer' answer}}></span>
 </p>
+<hr>
 {{#if showEditAnswer}}
   {{edit-answer answer=answer updateAnswer="updateAnswer" question=answer.question score=answer.score}}
 {{/if}}
