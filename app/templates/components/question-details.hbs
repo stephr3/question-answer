@@ -3,4 +3,8 @@
   <li>Date: {{question.date}}</li>
   <li>Notes: {{question.notes}}</li>
   <li>Tag: {{question.tag}}</li>
+  <li><span class="glyphicon glyphicon-pencil" {{action 'showEditQuestion'}}></span></li>
 </ul>
+{{#if showEditQuestion}}
+  {{edit-question question=question}}
+{{/if}}
