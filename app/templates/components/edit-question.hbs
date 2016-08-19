@@ -1,2 +1,25 @@
 <h3>Edit Question</h3>
 <hr>
+<form>
+  <div class="form-group">
+    <label for="author">Your Name:</label>
+    {{input value=question.author id='author'}}
+  </div>
+  <div class="form-group">
+    <label for="date">Date:</label>
+    {{input value=question.date id='date' type='date'}}
+  </div>
+  <div class="form-group">
+    <label for="query">What's your question?</label>
+    {{input value=question.query id='query'}}
+  </div>
+  <div class="form-group">
+    <label for="notes">Anything more to say?</label>
+    {{input value=question.notes id='notes'}}
+  </div>
+  <div class="form-group">
+    <label for="tag">Choose a Tag:</label>
+    {{input value=question.tag id='tag'}}
+  </div>
+  <button class="btn" {{action 'update' question}}>Edit</button>
+</form>
