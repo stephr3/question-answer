@@ -1,9 +1,20 @@
-<h4>{{answer.author}} - <em>{{answer.date}}</em></h4>
-<p>"{{answer.content}}"</p>
-<p>
-  <span class="glyphicon glyphicon-pencil" {{action 'showEditAnswer'}}></span>&nbsp;
-  <span class="glyphicon glyphicon-trash" {{action 'deleteAnswer' answer}}></span>
-</p>
-{{#if showEditAnswer}}
-  {{edit-answer answer=answer updateAnswer="updateAnswer" question=answer.question score=answer.score}}
-{{/if}}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <span class="glyphicon glyphicon-arrow-up"></span>
+      <span class="glyphicon glyphicon-arrow-down"></span>
+      {{answer.score}}
+    </div>
+    <div class="col-sm-8">
+      <h4>{{answer.author}} - <em>{{answer.date}}</em></h4>
+      <p>"{{answer.content}}"</p>
+      <p>
+        <span class="glyphicon glyphicon-pencil" {{action 'showEditAnswer'}}></span>&nbsp;
+        <span class="glyphicon glyphicon-trash" {{action 'deleteAnswer' answer}}></span>
+      </p>
+      {{#if showEditAnswer}}
+      {{edit-answer answer=answer updateAnswer="updateAnswer" question=answer.question score=answer.score}}
+      {{/if}}
+    </div>
+  </div>
+</div>
