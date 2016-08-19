@@ -12,7 +12,7 @@
       <label for="content">What's your answer?</label>
       {{input value=content id='content'}}
     </div>
-    <button class="btn">Save</button>
+    <button class="btn" {{action 'saveAnswer'}}>Save</button>
   </form>
 {{else}}
   <button class="btn" {{action 'showAddAnswer'}}>Add a New Answer!</button>
