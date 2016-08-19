@@ -1,6 +1,6 @@
 <div class="question">
   <h1>Question: "{{model.query}}"</h1>
-  {{question-details question=model update="update"}}
+  {{question-details question=model update="update" delete="delete"}}
 </div>
 <div class="new-answer">
   {{new-answer question=model saveAnswer='saveAnswer'}}

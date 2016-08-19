@@ -3,7 +3,7 @@
   <li>Date: {{question.date}}</li>
   <li>Notes: {{question.notes}}</li>
   <li>Tag: {{question.tag}}</li>
-  <li><span class="glyphicon glyphicon-pencil" {{action 'showEditQuestion'}}></span></li>
+  <li><span class="glyphicon glyphicon-pencil" {{action 'showEditQuestion'}}></span>&nbsp;<span class="glyphicon glyphicon-trash" {{action 'delete' question}}></span></li>
 </ul>
 {{#if showEditQuestion}}
   {{edit-question question=question update="update"}}
