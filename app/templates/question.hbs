@@ -2,6 +2,12 @@
   <h1>Question: "{{model.query}}"</h1>
   {{question-details question=model update="update"}}
 </div>
+<div class="new-answer">
+  {{new-answer question=model}}
+</div>
 <div class="answers">
-  <h1>Answers:</h1>
+  <h3>Answers:</h3>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
 </div>
