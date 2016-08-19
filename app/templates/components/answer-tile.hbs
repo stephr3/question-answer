@@ -1,2 +1,6 @@
 <h4>{{answer.author}} - <em>{{answer.date}}</em></h4>
 <p>"{{answer.content}}"</p>
+<p>
+  <span class="glyphicon glyphicon-pencil"></span>&nbsp;
+  <span class="glyphicon glyphicon-trash" {{action 'deleteAnswer' answer}}></span>
+</p>
