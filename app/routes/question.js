@@ -32,6 +32,15 @@ export default Ember.Route.extend({
     deleteAnswer(answer) {
       answer.destroyRecord();
       this.transitionTo('question');
+    },
+    updateAnswer(answer, params) {
+      Object.keys(params).forEach(function(key){
+        if(params[key] !== undefined) {
+          answer.set(key,params[key]);
+        }
+      });
+      answer.save();
+      this.transitionTo('question');
     }
   }
 });

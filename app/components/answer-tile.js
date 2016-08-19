@@ -10,6 +10,10 @@ export default Ember.Component.extend({
     },
     showEditAnswer() {
       this.set('showEditAnswer', true);
+    },
+    updateAnswer(answer, params) {
+      this.sendAction('updateAnswer', answer, params);
+      this.set('showEditAnswer', false);
     }
   }
 });

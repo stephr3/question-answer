@@ -5,5 +5,5 @@
   <span class="glyphicon glyphicon-trash" {{action 'deleteAnswer' answer}}></span>
 </p>
 {{#if showEditAnswer}}
-  {{edit-answer answer=answer}}
+  {{edit-answer answer=answer updateAnswer="updateAnswer" question=answer.question score=answer.score}}
 {{/if}}
