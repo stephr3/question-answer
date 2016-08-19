@@ -4,3 +4,9 @@
   </p>
   {{#link-to 'new'}}<button class="btn">Ask a Question!</button>{{/link-to}}
 </div>
+<div class="question-list">
+  <h1>Latest Questions...</h1>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</div>
